@@ -23,6 +23,19 @@ body {
     overflow-x: hidden;
 }
 
+/* head */
+.head {
+    position: relative;
+    display: none;
+    margin: auto 0;
+    padding: 30px 20px;
+    background-color: var(--orange);
+    border: 2px solid black;
+}
+
+
+/* table */
+
 .table {
     display: block;
     position: relative;
@@ -222,7 +235,7 @@ body {
 .essay p {
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
-    width: 240px;
+    /* width: 240px; */
 
     margin-top: 10px;
     margin-left: 20px;
@@ -245,4 +258,64 @@ body {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+@media only screen and (max-width: 1180px) {
+    .head {
+        display: block;
+    }
+
+    .table .row {
+        /* flex-direction: column; */
+        height: fit-content;
+        border: 0;
+    }
+    .row-1 .col-4, {
+        display: none;
+    }
+
+    .col-1, .col-5, .new-row {
+        display: none;
+    }
+
+    .col {
+        position: relative;
+        display: block;
+        flex: 100% !important;
+        max-width: 100% !important;
+        /* border-bottom: 2px solid black; */
+        border-top: 0;
+    }
+
+    .row-1 .col-3 {
+        height: fit-content;
+        /* background-color: antiquewhite; */
+    }
+
+    .cell-title {
+        display: none;
+    }
+
+    .shuffle {
+        position: relative;
+        display: block;
+    }
+
+    .shuffle span {
+        top: 0;
+    }
+
+    .essay h3 {
+        margin-top: 10px;
+    }
+
+    .essay p {
+        margin-right: 30px;
+    }
+
+    #essay-content p {
+        font-size: 17px;
+        margin-right: 30px;
+
+    }
 }
