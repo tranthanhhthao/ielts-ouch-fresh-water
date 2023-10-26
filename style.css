@@ -260,7 +260,7 @@ body {
     padding-right: 20px;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1080px) {
     .head {
         display: block;
     }
